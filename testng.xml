@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SauceDemoTestSuite">
+    <listeners>
+        <listener class-name="com.saucedemo.utils.CustomListener" />
+        <listener class-name="com.saucedemo.utils.ExtentReport" />
+    </listeners>
+    <test thread-count="5" name="Test">
+        <classes>
+            <class name="com.saucedemotest.CartPageTest"/>
+           <class name="com.saucedemotest.CheckoutCompletPageTest"/>
+            <class name="com.saucedemotest.FirstCheckoutPageTest"/>
+            <class name="com.saucedemotest.LoginPageTest"/>
+            <class name="com.saucedemotest.LogoutPageTest"/>
+            <class name="com.saucedemotest.ProductsPageTest"/>
+            
+        </classes>
+    </test>
+</suite>
